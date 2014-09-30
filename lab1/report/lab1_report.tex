@@ -1,0 +1,37 @@
+\documentclass[12pt]{report}
+\begin{document}
+
+\title{ADS \\  Assignment \#1}
+\author{Group 20 \\ Ryan Hart and David Tyler}
+\date{\today}
+\maketitle
+
+\section*{Objective}
+The objective of this laboratory was to create a multiplexed display using one seven output decoder. The display must show 32 or 85, selectable by a toggle switch. For the second part of the laboratory, the display must show 23 or 58 without altering the circuit.
+\section*{Components}
+
+\begin{itemize}
+    \item 1 T74LS157B1 ( 2:1 Multiplexer )
+    \item 1 HD74LS04  ( Quad NOT Gate )
+    \item 1 SN74LS247N  ( 7--Segment Display Decoder )
+    \item 1 Toggle Switch
+    \item 1 Dual 7-­Segment Display
+    \item Assorted Wire
+    \item Prototype Board
+\end{itemize}
+
+\section*{Experimental Approach}
+
+First, the inputs to the multiplexer were designed. A NOT gate was used to condition the input from the toggle switch for each digit to be displayed. The four-­wire circuit that generates either 3 or 8 depending on the toggle was connected to one of the multiplexer inputs and the other four--wire circuit to generate 2 or 5 was connected to the other multiplexer input. The select pin on the multiplexer was tied into the clock signal so that the digit would change in time to the clock. The multiplexer output was connected to the decoder input. The decoder took the four--wire multiplexer input and converted it to a seven wire output in order to light up the correct display segments. This decoder output was connected directly to both sides of the display inaccordance to a mapping determined from experimentation. One anode of the display was connected to clock and the other was connected to not clock. In order to display 23 and 58, the select pin the multiplexer was connected to not clock instead of clock.
+
+\section*{Results}
+
+The circuit worked well, all four numbers were correctly displayed. We had some trouble with the 7--segment display being much dimmer on one side than the other. After some investigation, we determined that this was due to a faulty display. If the wiring had been at fault, the dim side of the display would have changed when we swapped the sides the wires were plugged into on the display. We also had trouble inserting the decoder into the protoboard. We eventually this was due to the pins on the decoder chip being too thick for the board. This was resolved by carefully applying enough force to insert the chip.
+
+\section*{Conclusions}
+A multiplexer can be used in conjunction with a high clock speed to produce different numbers on multiple displays with only one decoder. We were able to solve part two of the lab by changing the input of the multiplexer select pin from the clock to the inverted clock.
+
+\section*{FTQ}
+There was no FTQ for this lab.
+
+\end{document}
