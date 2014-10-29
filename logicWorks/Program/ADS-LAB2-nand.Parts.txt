@@ -1,0 +1,11 @@
+Circuit:	ADS-LAB2-nand
+Date:		Wednesday, October 01, 2014 - 5:48 PM
+
+Device Type        Num. Used   Value    References
+
+NAND-2                39                D00001 D00002 D00003 D00004 D00005 D00006 D00007 D00008
+                                        D00009 D00010 D00011 D00012 D00013 D00014 D00015 D00016
+                                        D00017 D00018 D00019 D00020 D00021 D00022 D00023 D00024
+                                        D00025 D00026 D00027 D00028 D00029 D00030 D00031 D00032
+                                        D00033 D00034 D00035 D00036 D00037 D00038 D00039
+NOT                   5                 D00040 D00041 D00042 D00043 D00044
